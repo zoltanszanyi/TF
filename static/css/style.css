@@ -1,0 +1,394 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.main-page{
+    color: white;
+    font-size: 4em;
+    padding-top: 8%;
+    padding-left: 15%;
+}
+
+.main-page2{
+    color: white;
+    font-size: 2em;
+    padding-top: 1%;
+    padding-left: 15%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.logout-page{
+    color: white;
+    font-size: 1em;
+    padding-top: 1%;
+    padding-left: 1%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.filters{
+    color: white;
+    padding-bottom: 1%;
+    padding-left: 11%;
+}
+
+.filters1{
+    color: white;
+    padding-bottom: 1%;
+    padding-left: 5%;
+}
+.filters2{
+    color: white;
+    padding-bottom: 1%;
+    padding-left: 5%;
+}
+.filters3{
+    color: white;
+    padding-bottom: 1%;
+    padding-left: 10%;
+}
+
+
+.profiles
+{
+    color: #BFBFBE;
+    position: relative;
+    padding-left: 30%;
+    padding-right: 35%;
+}
+
+
+.account-page
+{
+    height: 500%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('background.png');
+    background-attachment: fixed;
+    position: absolute;
+    
+}
+
+.content-section {
+    font-size: 1em;
+    color: white;
+    overflow: hidden;
+    border-radius: none;
+  }
+
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-left: 45%;
+    margin-bottom: 16px;
+    
+}
+
+.account-img2 {
+    height: 75px;
+    width: 75px;
+    margin-bottom: 16px;
+    
+}
+
+.form-group2{
+    padding-right: 20%;
+    border-color: #B6B6B6;
+    padding-left: 35%;
+    padding-top: 1%;
+}
+
+.padding{
+    padding-top: 1%;
+}
+
+.form-box
+{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: rgba(0,0,0,0.4);
+    padding: 5px;
+    overflow: hidden;
+    color: white;
+    
+}
+
+.button-box
+{
+    width: 400px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    left: -2.1%;
+
+}
+
+.button-box2
+{
+    width: 230px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 40px;
+    
+
+}
+
+.setup-filters {
+    color: #BFBFBE;
+    padding-bottom: 1%;
+    padding-left: 40%;
+}
+
+.toggle-btn
+{
+    border: none;
+    color: #B2B0AF;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1.5rem;
+
+    border: 3px solid #F79563;
+    position: relative;
+    background-color: black;
+}
+
+.toggle-btn-filter
+{
+    border: none;
+    color: #B2B0AF;
+    border-radius: 3px;
+    transition: ease-out 0.3s;
+    font-size: 1.2rem;
+
+    border: 3px solid #F79563;
+    position: relative;
+    background-color: black;
+    left: 36%;
+}
+
+
+.toggle-btn2
+{
+    border: none;
+    color: #B2B0AF;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+
+    border: 3px solid #F79563;
+    position: relative;
+    background-color: black;
+}
+
+.toggle-btn-sign-up{
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: #B2B0AF;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    border: 3px solid #F79563;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    left: 46%;
+}
+
+.toggle-btn-sign-up:hover{
+    color: #B2B0AF;
+    cursor: pointer;
+}
+
+.toggle-btn-sign-up:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #7C7470;
+}
+.toggle-btn-sign-up:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+
+#btn
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group-login
+{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register
+{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1 px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+
+.submit-btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #ff523b;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+select
+{
+    
+    font-size: 0.9rem;
+    padding: 0.2em 1em;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    
+}
+
+.text
+{
+    font-size: 0.9em;
+    margin: 4% auto;
+}
+
+.custom-select
+{
+    position: relative;
+}
+
+.check-box
+{
+    margin: 30px 10px 34px 0px;
+}
+
+span
+{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+
+#login
+{
+    left: 50px;
+}
+
+#login input
+{
+    color: white;
+    font-size: 15;
+}
+
+#register
+{
+    left: 450px;
+}
+
+#register input
+{
+    color: white;
+    font-size: 15;
+}
+
+
+.container{
+    margin: 30%;
+    font-size: 1em;
+    color: white;
+    overflow: hidden;
+   
+}
+.container-profile{
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1em;
+    color: white;
+   
+}
+
+.container-login{
+    margin: 44%;
+    font-size: 1em;
+    color: white;
+    overflow: hidden;
+   
+}
+
+.submit-btn-reg
+{
+    width: 10%;
+    padding: 2px 20px;
+    cursor: pointer;
+    display: block;
+    background: #ff523b;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    position: relative;
+}
+
+
+.mess{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    
+}
+

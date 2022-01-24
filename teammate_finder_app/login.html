@@ -1,0 +1,16 @@
+{% extends 'teammate_finder_app/home.html'%}
+{% load static%}
+{% load crispy_forms_tags %}
+{% block content%}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <div class="container-login" style="margin-top: 30px;">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                {{ form|crispy }}
+            </fieldset>
+                
+            <button class="toggle-btn-sign-up">Sign In</button> 
+        </form>
+    </div>
+{% endblock content%}

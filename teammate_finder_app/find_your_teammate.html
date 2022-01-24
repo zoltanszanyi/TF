@@ -1,0 +1,69 @@
+{% extends 'teammate_finder_app/home.html'%}
+{% load static%}
+{% load crispy_forms_tags %}
+{% block content%}
+    <h1 class="setup-filters">Set up your filters</h1>
+    <form method="get" class="filters">
+        
+        <ul style="list-style-type:none">
+            <div class="filters1">
+             <th class="filters">Rank: {{myFilter.form.rank}}</th> 
+             <th class="filters">Region: {{myFilter.form.region}}</th>
+             <th class="filters">Language: {{myFilter.form.language}}</th> 
+            </div>
+           <li class="filters"></li>
+           <div class="filters3">
+            <th class="filters">Country: {{myFilter.form.country}}</th>
+            <th class="filters">Gender: {{myFilter.form.gender}}</th>
+            </div>
+           <li class="filters"></li>
+           <div class="filters2">
+           <th class="filters2">Top: {{myFilter.form.role1}}</th>
+           <th class="filters">Jungle: {{myFilter.form.role2}}</th>  
+           <th class="filters">Mid: {{myFilter.form.role3}}</th>  
+           <th class="filters">ADC: {{myFilter.form.role4}}</th>  
+           <th class="filters">Support: {{myFilter.form.role5}}</th>
+           <li class="filters"></li>
+            </div>    
+        </ul>   
+        
+        <button type="submit" class="toggle-btn-filter">Reset Filters</button>
+    </form>
+
+<div class="profiles" >
+    {% for profile in myFilter.qs %}
+        <div class="padding">
+            <fieldset class="form-group2">
+                <h2>Username: {{profile}}</h2>
+                <img class="account-img2" src=" {{profile.image.url}}">
+                <ul style="list-style-type:none"> 
+                    <li >Gender: {{ profile.gender }}</li>
+                    <li>Country: {{profile.country.name}} </li>
+                    <li>Region: {{profile.region}} </li>
+                    <li>Langueage: {{profile.language}} </li>
+                    <li>Rank: {{profile.rank}} </li>
+                    Roles: 
+                    {% if profile.role1 == True %}
+                        Top
+                    {% endif %}
+                    {% if profile.role2 == True%}
+                        Jungle
+                    {% endif %}
+                    {% if profile.role3 == True%}
+                        Mid
+                    {% endif %}
+                    {% if profile.role4 == True%}
+                        ADC
+                    {% endif %}
+                    {% if profile.role5 == True%}
+                        Support
+                    {% endif %}
+                    <li>Text: {{profile.write}} </li>
+                    <li> </li>
+                    
+                </ul>
+            </fieldset>
+        </div>
+    {% endfor %}
+</div>  
+{% endblock content%}

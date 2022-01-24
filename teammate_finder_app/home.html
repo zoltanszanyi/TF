@@ -1,0 +1,42 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        
+      <div class='account-page'>
+        
+          {% if user.is_authenticated %}
+            <div class="button-box">
+              <a href="{% url 'find_your_teammate'%}" class="toggle-btn" type="submit">Find your teammate</a>
+              <a href="{% url 'profile'%}" class="toggle-btn" type="submit">Profile</a>
+              <a href="{% url 'logout'%}" class="toggle-btn" type="submit">Log Out</a>
+            </div>
+          {% else %}
+            <div class="button-box2">
+              <a href="{% url 'login'%}" class="toggle-btn2" type="submit">Log In</a>
+              <a href="{% url 'register'%}" class="toggle-btn2" type="submit">Register</a>
+            </div>
+          {% endif %}
+        
+        <div>
+          <div class="mess">
+            {% if messages %}
+              {% for message in messages%}
+                <div class= "alert alert-{{message.tags}}">{{message}}</div>
+              {% endfor%}
+            {%endif%} 
+          </div>
+          {% block content %}
+          {% endblock content %}
+        </div>
+      </div> 
+    </body>
+
+</html>
+    
+     
