@@ -15,3 +15,12 @@ A második lehetőségünk, hogy nem mi keresünk csapattársakat, hanem arra v�
 az alkalmazáson belül. Ezáltal bekerülünk az adatbázisba, így minden felhasználó számára elérhetőek leszünk, és ha valakinek megtetszik a profilunk akkor a játékon belül már 
 fel is veheti velünk a kapcsolatot. A felhasználónevünk alapján küldd nekünk egy barát kérelmet. A kérelmet lehetőségünk van elfogadni, elutasítani vagy akár figyelmen kívül 
 hagyni. 
+
+Az alkalmazás fejlesztésében használt technológiák:
+- Python
+- Django
+- HTML 
+- CSS
+- Java Script
+- Bootstrap
+- SQLITE
