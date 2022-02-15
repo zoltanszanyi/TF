@@ -24,3 +24,5 @@ Az alkalmazás fejlesztésében használt technológiák:
 - Java Script
 - Bootstrap
 - SQLITE
+
+Az application mappában található ppt-ben láthatóak képek a webalkalmazásról 
